@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = '3k1r_1fxsv^1!yyad==@l_blvut_nu5rv^5152sn_0w=@j5b*x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'services',
     'django_filters',
     'django_inlinecss',
-    'rest_auth'
+    'rest_auth',
+    # 'DjangoWhiteNoise'
 ]
 
 REST_FRAMEWORK = {

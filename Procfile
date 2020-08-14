@@ -1,0 +1,1 @@
+web: gunicorn ejika.wsgi --log-file -
