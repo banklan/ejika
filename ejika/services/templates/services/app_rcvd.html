@@ -1,0 +1,60 @@
+{% load inlinecss %}
+{% inlinecss "styles/style.css" %}
+<html>
+    <body>
+    <p>Application for finance for the purchase of <strong>{{ data.appliance }}</strong> by <strong>{{ data.f_name }} {{ data.l_name }}</strong>.</p>
+        <div class="table_wrap">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <td>{{ data.title }} {{ data.f_name}} {{ data.l_name }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ data.email}}</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+234 {{ data.phone }}</td>
+                </tr>
+                <tr>
+                    <th>Occupation</th>
+                    <td>{{ data.occupation }}</td>
+                </tr>
+                <tr>
+                    <th>Brand</th>
+                    <td>{{ data.brand }}</td>
+                </tr>
+                <tr>
+                    <th>Appliance</th>
+                    <td>{{ data.appliance }}</td>
+                </tr>
+                <tr>
+                    <th>Capacity</th>
+                    <td>{{ data.capacity }}</td>
+                </tr>
+                <tr>
+                    <th>Other Information</th>
+                    <td>{{ data.other_info }}</td>
+                </tr>
+                <tr>
+                    <th>Income</th>
+                    <td>{{ data.income }}</td>
+                </tr>
+                <tr>
+                    <th>Tenure</th>
+                    <td>{{ data.tenure }}</td>
+                </tr>
+                <tr>
+                    <th>Frequency</th>
+                    <td>{{ data.frequency }}</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>{{ data.location }}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+{% endinlinecss %}

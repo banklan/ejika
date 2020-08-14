@@ -1,0 +1,78 @@
+// theme colors
+$primary: '#003B63';
+$secondary: '#002E4F';
+$pry-light: '#0063ab';
+// $sec-light: '#0E2A47';
+$accent: '#ff1744';
+$error: '#b71c1c';
+$lightbg: '#fff';
+
+// font family
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Baloo 2', cursive;
+// font-family: 'Baloo Thambi 2', cursive;
+// font-family: 'Comfortaa', cursive;
+
+.home {
+    .banner {
+        height: 40rem;
+        width: 100%;
+        background-image: linear-gradient(to bottom right, rgba(0, 59, 99, 0.89), rgba(255, 23, 69, 0.623)), url('../statics/images/banner.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .banner_caption {
+            min-height: 22rem;
+            margin-top: 8rem;
+            background: rgba(41, 41, 41, .31);
+            padding: 4rem 2.5rem;
+            text-align: center !important;
+
+            .v-btn{
+                border-radius: 0 !important;
+            }
+            h1{
+                margin-bottom: 2.5rem !important;
+            }
+            @media screen and (max-width: 812px){
+                h1{
+                    font-size: 3.2rem !important;
+                }
+                h3{
+                    font-size: 1.9rem !important;
+                }
+            }
+            @media screen and (max-width: 527px){
+                h1{
+                    font-size: 3rem !important;
+                }
+                h3{
+                    font-size: 1.75rem !important;
+                }
+            }
+        }
+        @media screen and (max-width: 527px){
+            .banner_caption{
+                margin-top: 2.5rem !important;
+            }
+        }
+    }
+    .how_to{
+        min-height: 50rem;;
+        width: 100%;
+        margin-bottom: 2rem;
+        // background: linear-gradient(to bottom right, rgba(255, 23, 68, 0.45), rgba(0, 99, 171, 0.81), rgba(0, 59, 99, 0.89)), url('../statics/images/how_to.jpg');
+        // margin-top: -138px;
+        // clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+        // background-size: cover !important;
+        // background-position: center center !important;
+        // background-repeat: no-repeat !important;
+
+    }
+}

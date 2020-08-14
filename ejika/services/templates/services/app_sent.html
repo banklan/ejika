@@ -1,0 +1,17 @@
+{% load inlinecss %}
+<html>
+    <body class="app_sent">
+        <p>Dear {{ data.title }} {{ data.f_name}} {{ data.l_name }}, thank you for sending in your application for finance
+            for the purchase of {{ data.appliance }}.</p>
+        <p>We are reviewing your application and will soon call you on your mobile no <strong>+234 {{ data.phone }} </strong>
+            or we will send you an email through <strong>{{ data.email }}</strong>. If any of the supplied phone number or email address is wrong,
+            kindly contact us to supply the correct one.</p>
+        <p>Our officials might need to ask you more questions relating to the appliance you intend to purchase, your job,
+            guarantor(s) (if need be) and other relevant information they require, to help us review and evaluate your application.</p>
+        <p>While this is not a definite guanrantee that your applications will be granted, you can trust in our processes
+            to assess your application fairly.</p>
+        <p>We thank you once again for contacting us, as we look forward to doing good business with you.</p>
+        <p>Steve</p>
+        <p>ejika.com.ng</p>
+    </body>
+</html>

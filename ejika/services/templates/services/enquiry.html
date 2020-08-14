@@ -1,0 +1,31 @@
+{% load inlinecss %}
+{% inlinecss "styles/style.css" %}
+<html>
+    <body>
+        <p>Enquiry sent by {{data.f_name }} {{data.l_name }}.</p>
+    <div class="table_wrap">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <td>{{ data.f_name}} {{ data.l_name }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ data.email}}</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+234 {{ data.phone }}</td>
+                </tr>
+                <tr>
+                    <th>Subject</th>
+                    <td>{{ data.subject }}</td>
+                </tr>
+                <tr>
+                    <th>Message</th>
+                    <td>{{ data.message }}</td>
+                </tr>
+            </table>
+    </body>
+</html>
+{% endinlinecss %}
